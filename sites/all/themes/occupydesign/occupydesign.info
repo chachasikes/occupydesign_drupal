@@ -1,6 +1,6 @@
 ; Theme basics
-name = IconX Theme
-description = Theme for iconx.
+name = occupydesign Theme
+description = Theme for occupydesign.
 core = 7.x
 engine = phptemplate
 

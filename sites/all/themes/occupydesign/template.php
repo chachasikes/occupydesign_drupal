@@ -1,12 +1,12 @@
 <?php
 
 // Include preprocessing functions
-include('iconx.preprocess.inc');
+include('occupydesign.preprocess.inc');
 
 /**
  * Implements hook_form_alter().
  */
-function iconx_form_alter(&$form, &$form_state, $form_id) {
+function occupydesign_form_alter(&$form, &$form_state, $form_id) {
   // Add appropriate title for search form
   if ($form_id == 'search_block_form') {
     $form['search_block_form']['#title'] = '';
@@ -16,8 +16,8 @@ function iconx_form_alter(&$form, &$form_state, $form_id) {
   }
 }
 
-function iconx_form_system_theme_settings_alter(&$form, $form_state) {
-  $form['iconx'] = array(
+function occupydesign_form_system_theme_settings_alter(&$form, $form_state) {
+  $form['occupydesign'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Widget'),
     '#default_value' => theme_get_setting('sitename'),

@@ -6,7 +6,7 @@
 /**
  * HTML preprocessing
  */
-function iconx_preprocess_html(&$vars) {
+function occupydesign_preprocess_html(&$vars) {
   global $theme_key, $user;
 
   // Add to array of helpful body classes
@@ -25,17 +25,17 @@ function iconx_preprocess_html(&$vars) {
 /**
  * Maintenance page preprocessing
  */
-function  iconx_preprocess_maintenance_page(&$vars) {
+function  occupydesign_preprocess_maintenance_page(&$vars) {
   if (class_exists('Database', FALSE)) {
-    iconx_preprocess_html($vars);  // set html vars (html.tpl.php is in maintenance-page.tpl.php)
-    iconx_preprocess_page($vars);  // set page vars
+    occupydesign_preprocess_html($vars);  // set html vars (html.tpl.php is in maintenance-page.tpl.php)
+    occupydesign_preprocess_page($vars);  // set page vars
   }
 }
 
 /**
  * Page preprocessing
  */
-function iconx_preprocess_page(&$vars) {
+function occupydesign_preprocess_page(&$vars) {
 
   //$fbconnect = theme_fbconnect_login_button($vars);
   //dpm($fbconnect);
@@ -49,7 +49,7 @@ function iconx_preprocess_page(&$vars) {
   }
   
   $vars['logo_image_link'] = theme_get_setting('logo_image_link');
-  $vars['logo'] = '<a href="/"><img src="/' . drupal_get_path('theme', 'iconx') . '/' . $vars['logo_image_link'] . '" /></a>';
+  $vars['logo'] = '<a href="/"><img src="/' . drupal_get_path('theme', 'occupydesign') . '/' . $vars['logo_image_link'] . '" /></a>';
  
   $vars['prealpha'] = '';
 
@@ -75,7 +75,7 @@ function iconx_preprocess_page(&$vars) {
   ));
   
   // Temp for wireframing or MVP
-  $vars['submit_btn'] = url(drupal_get_path('theme', 'iconx') . '/images/submit-large-overlay.gif');
+  $vars['submit_btn'] = url(drupal_get_path('theme', 'occupydesign') . '/images/submit-large-overlay.gif');
   
   // Hardcoded site names
   switch ($_SERVER['HTTP_HOST']) {
@@ -121,7 +121,7 @@ function iconx_preprocess_page(&$vars) {
 /**
  * Region preprocessing
  */
-function iconx_preprocess_region(&$vars) {
+function occupydesign_preprocess_region(&$vars) {
   // Set region variables
   $vars['region_style'] = $vars['fluid_width'] = '';
   $vars['region_name'] = str_replace('_', '-', $vars['region']);
@@ -132,7 +132,7 @@ function iconx_preprocess_region(&$vars) {
 /**
  * Block preprocessing
  */
-function iconx_preprocess_block(&$vars) {
+function occupydesign_preprocess_block(&$vars) {
   global $theme_info, $user;
 
   // Exit if block is outside a defined region
@@ -145,7 +145,7 @@ function iconx_preprocess_block(&$vars) {
 /**
  * Node preprocessing
  */
-function iconx_preprocess_node(&$vars) {
+function occupydesign_preprocess_node(&$vars) {
   // dpm($vars); not working, use this krumo call instead to see the node object.
 /*   var_dump(krumo($vars)); */
 
@@ -175,7 +175,7 @@ function iconx_preprocess_node(&$vars) {
 /**
  * Comment preprocessing
  */
-function iconx_preprocess_comment(&$vars) {
+function occupydesign_preprocess_comment(&$vars) {
   static $comment_odd = TRUE;
  // Comment is odd or even
 
@@ -188,7 +188,7 @@ function iconx_preprocess_comment(&$vars) {
 /**
  * Preprocessing function for node types.
  */
-function iconx_preprocess_node_symbol(&$vars) {
+function occupydesign_preprocess_node_symbol(&$vars) {
 
 /*
   $field = $vars['field_image_references'];
