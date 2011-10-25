@@ -57,4 +57,4 @@ features[] = favicon
 ; Custom Theme Settings
 settings[sitename] = Occupy Design
 settings[site_slogan] = Building a visual language for the 99%
-settings[logo_image_link] = images/occupydesign.png
+settings[logo_image_link] = images/occupy_logo.png
