@@ -55,6 +55,6 @@ features[] = slogan
 features[] = favicon
 
 ; Custom Theme Settings
-settings[sitename] = Iconathon
-settings[site_slogan] = A new initiative to create civic symbols for the public domain.
-settings[logo_image_link] = images/iconathon1.jpg
+settings[sitename] = Occupy Design
+settings[site_slogan] = Building a visual language for the 99%
+settings[logo_image_link] = images/occupydesign.png
