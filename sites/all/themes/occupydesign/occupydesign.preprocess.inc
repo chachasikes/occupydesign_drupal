@@ -148,7 +148,7 @@ function occupydesign_preprocess_block(&$vars) {
 function occupydesign_preprocess_node(&$vars) {
 
   // dpm($vars); not working, use this krumo call instead to see the node object.
-  var_dump(krumo($vars));
+/*   var_dump(krumo($vars)); */
 
   // Add to array of handy node classes
   $vars['classes_array'][] = $vars['zebra'];                              // Node is odd or even
