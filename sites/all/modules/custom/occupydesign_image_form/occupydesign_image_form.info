@@ -1,0 +1,6 @@
+name = Occupy Design Image Form
+description = "Customize the Image Input Form"
+core = 7.x
+package = occupydesign
+
+files[] = occupydesign_image_form.module

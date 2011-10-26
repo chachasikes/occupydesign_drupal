@@ -302,3 +302,29 @@ strong {
   margin: 0 0 10px 0;
 
 }
+
+/** Custom Style **/
+
+.page-node-add label {
+  font-weight: bold;
+  font-size: 125%;
+}
+
+
+.page-node-add .field-type-file span.fieldset-legend,
+.page-node-add .field-type-image span.fieldset-legend {
+  font-weight: bold;
+  font-size: 125%;
+
+}
+
+.page-node-add .field-type-file label,
+.page-node-add .field-type-image label {
+  font-weight: normal;
+  font-size: 100%;
+    padding-bottom: 20px;
+}
+
+.filter-wrapper {
+  display: none;
+}

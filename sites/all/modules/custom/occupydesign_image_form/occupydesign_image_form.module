@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * Implementatation of hook_menu().
+ */
+/*
+function occupydesign_image_form_menu() {
+  $items['add/design'] = array(
+    'title' => 'Upload Design',
+    'description' => 'Upload a design.',
+    'page callback' => 'occupydesign_image_form_form_render',
+    'page arguments' => array(t('Upload Design')),
+    'access callback' => TRUE,
+    'expanded' => TRUE,
+  );
+  return $items;
+}
+*/
+
+/*
+
+function occupydesign_image_form_form_render() {
+ $form = drupal_get_form('image_node_form');
+ $output = drupal_render($form);
+ return $output;
+}
+*/
+/**
+ * Alter the image form (a content type.)
+ */
+function occupydesign_image_form_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'image_node_form') {
+    // @TODO fix those modules to have better permission control.
+    // @TODO Integrate email verification.
+
+    // Override form elements, by section.
+    // Customize prefix.
+   // occupydesign_image_form_prefix_elements(&$form, &$form_values);
+
+
+
+    // Hide content type settings except for admins.
+    $access = user_access('administer nodes');
+    if(!$access) {
+      $form['additional_settings']['#access'] = FALSE;
+      $form['language']['#type'] = 'hidden';
+    }
+
+/*
+    // Add a special submit handler.
+    $form['#submit'][] = 'occupydesign_image_form_form_submit';
+*/
+  }
+}
+
+function occupydesign_image_form_map_elements(&$form, &$form_values) {
+/*
+  if(!empty($add_variables_array['map_instructions'])) {
+    $form['#groups']['group_geographic']->label = $add_variables_array['map_instructions'];
+  }
+  // Custom map interface text.
+  $form['field_location']['#prefix'] = '<div id="field-location-add-more-wrapper">';
+  $form['field_location']['#prefix'] .= '<div class="map-instructions-container">';
+  $form['field_location']['#prefix'] .= '<h3>Map this Group</h3>';
+  $form['field_location']['#prefix'] .= '<div class="address-ajax">';
+  $form['field_location']['#prefix'] .= '<div id="search-links">';
+  $form['field_location']['#prefix'] .= '<div id="search-places" class="form-input">';
+  $form['field_location']['#prefix'] .= '<input placeholder="First, ZOOM to address or zipcode" size=50 class="form-item" id="search-map-input" />';
+  // @TODO Add graphic in two places. : drupal_get_path('module', 'occupydesign_image_form') .
+  $form['field_location']['#prefix'] .= '<input type="image" src="' . base_path() . drupal_get_path('module', 'occupydesign_image_form') . '/images/search_button_large.png" id="search-links-submit" class="search_btn" align="middle" value="Search" alt="Search">';
+  $form['field_location']['#prefix'] .= '</div>';
+  $form['field_location']['#prefix'] .= '<h4>Then set a point or draw the area of the map.</h4>';
+  $form['field_location']['#prefix'] .= '</div><div class="clear"></div>';   
+  $form['field_location']['#prefix'] .= '</div>';
+*/
+  
+  
+/*
+  $settings = array();
+  $settings['javascript_settings']['maxZoom'] = 18;
+  $settings['javascript_settings']['zoom'] = 11;
+  $settings['javascript_settings']['zoomNeighborhood'] = 14;
+  $settings['javascript_settings']['latitude'] = variable_get('citygroups_default_location_latitude', array());
+  $settings['javascript_settings']['longitude'] = variable_get('citygroups_default_location_longitude', array());  
+  drupal_add_js($settings, 'setting');
+*/
+  
+
+
+  drupal_add_js(drupal_get_path('module', 'occupydesign_image_form') . '/js/occupydesign_image_form.js', array('type' => 'file',  'group' => JS_THEME, 'scope' =>'footer'));
+}
