@@ -13,9 +13,7 @@
     <?php endif; ?>
     <div id="header" class="grid_16">
       <div class="header-logo-container alpha omega">
-        <?php print render($page['header_logo']); ?>
-        <?php print $logo; ?>
-        <?php print $prealpha; ?>
+
       </div>
     </div>
     <?php if ($page['header_bottom']): ?>
