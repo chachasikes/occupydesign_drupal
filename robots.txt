@@ -58,3 +58,13 @@ Disallow: /?q=user/password/
 Disallow: /?q=user/register/
 Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
+
+### Giving robot access to Tamiment Library, New York University 
+### (a special collection documenting labor and progressive social activity)
+### However, the main access that they get will be to crawl pages that they will be
+### locked out of anyway, because their robot will not be logged in. 
+### We will alter this file and see if this helps them with their archving. 
+### If not, we'll remove this line.
+
+User-Agent: cdlwas_bot
+Disallow:
