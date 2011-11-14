@@ -11,10 +11,6 @@ stylesheets[all][] = css/grid.css
 stylesheets[all][] = css/drupal_reset.css
 ; Custom site styles - backgrounds, etc. Can be merged with layout as it makes sense.
 stylesheets[all][] = css/style.css
-; Changes to admin interface.
-stylesheets[all][] = css/admin.css
-; Changes to the logged in content editor experience (forms etc)
-stylesheets[all][] = css/edit.css
 
 
 ; Scripts
@@ -57,4 +53,4 @@ features[] = favicon
 ; Custom Theme Settings
 settings[sitename] = Occupy Design
 ;settings[site_slogan] = Building a visual language for the 99%
-;settings[logo_image_link] = images/occupy_logo.png
+settings[logo_image_link] = images/ODBanner_960x1601
