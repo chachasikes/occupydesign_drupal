@@ -20,12 +20,10 @@ body, body #content {
 /* HTML Elements
 -------------------------------------------------------------- */
 h1 { font-size: 175%; line-height:150%; margin-bottom:15px; font-weight: bold; font-family: 'Oswald', sans-serif;}
-h2, #content h2 a { font-size: 150%; line-height:150%; margin-bottom:15px; font-weight: bold; font-family: 'Oswald', sans-serif;}
+h2 { font-size: 150%; line-height:150%; margin-bottom:15px; font-weight: bold; font-family: 'Oswald', sans-serif;}
 h3, h4, h5, dt { font-size:125%; line-height:150%; margin-bottom:15px;  font-weight: bold; font-family: 'Oswald', sans-serif;}
 
-#content h2 a {
-font-size: 100%;
-}
+
 
 dl,
 dd,
@@ -229,7 +227,7 @@ body {
 /* 	background: url(http://design.occupywiki.org/wp-content/uploads/2011/10/brooklyn.jpg) no-repeat fixed center; */
 	color: #333333;
 	font-size: 12px;
-/* 	font-family: Georgia, "Times New Roman", Times, serif; */
+	font-family: Georgia, "Times New Roman", Times, serif;
 	line-height: 20px;
 	margin: 0px auto 0px;
 	padding: 0px;
@@ -2021,11 +2019,13 @@ img.alignleft {
 	margin: 0px;
 	padding: 0px;
 	}
+/*
 .even, .alt {
 	border: 1px solid #e5e5e5;
 	margin: 0px;
 	padding: 0px;
 	}
+*/
 	
 #header .headerright {
 	display: none;
