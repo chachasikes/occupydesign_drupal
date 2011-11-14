@@ -58,6 +58,24 @@
   <?php global $base_url; ?>
   <base href="<?php  print $base_url ?>" />
 
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="distribution" content="global">
+<meta name="robots" content="follow, all">
+<meta name="language" content="en">
+<meta name="verify-v1" content="7XvBEj6Tw9dyXjHST/9sgRGxGymxFdHIZsM6Ob/xo5E=">
+<meta name="description" content="Building a visual language for the 99%, grassroots style. Infographic + other protest signs, logistical signage, and universal icons to support the Occupy Together movement.">
+
+
+<title> OccupyDesign</title>
+<link rel="Shortcut Icon" href="http://occupydesign.org/wp-content/themes/organic_structure_white/images/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="http://occupydesign.org/wp-content/themes/organic_structure_white/style.css" type="text/css" media="screen">
+<link rel="alternate" type="application/rss+xml" title="OccupyDesign RSS Feed" href="http://occupydesign.org/feed/">
+<link rel="alternate" type="application/atom+xml" title="OccupyDesign Atom Feed" href="http://occupydesign.org/feed/atom/">
+<link rel="pingback" href="http://occupydesign.org/xmlrpc.php">
+
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
