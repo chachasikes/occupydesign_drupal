@@ -208,6 +208,9 @@ strong {
   display: none;
 }
 
+.logged-in .filter-wrapper {
+  display: block;
+}
 
 
 .view-header {
