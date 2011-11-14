@@ -2075,3 +2075,41 @@ img.alignleft {
 	background: #000;
 	float: right;
 }
+
+
+/** WP sign up button **/
+#mc_embed_signup input.button {
+    display: block;
+    margin: 0 0 10px;
+    min-width: 90px;
+    width: 35%;
+}
+#mc_embed_signup .button {
+    background-color: #AAAAAA;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    clear: both;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+}
+#mc_embed_signup input {
+    border: 1px solid #999999;
+}
+#mc_embed_signup form {
+    text-align: left;
+}
+#mc_embed_signup {
+    font: 14px Helvetica,Arial,sans-serif;
+}
