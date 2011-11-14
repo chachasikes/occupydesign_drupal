@@ -198,10 +198,12 @@ strong {
 }
 
 .page-node-add .field-type-file label,
-.page-node-add .field-type-image label {
-  font-weight: normal;
-  font-size: 100%;
-    padding-bottom: 20px;
+.page-node-add .field-type-image label,
+.page-node-add .fieldset-legend,
+.page-node-add .label {
+  padding-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 150%;
 }
 
 .filter-wrapper {
@@ -229,6 +231,28 @@ strong {
   display: none;
 }
 
+#content-top-inner .block .content,
+.fieldset-description {
+  width: 75%;
+}
+
+input {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.form-item-language {
+  display: none;
+}
+
+.form-wrapper {
+  margin: 40px 0 10px 0;
+}
+
+.form-managed-file {
+  padding: 20px;
+  background: #ddd;
+}
 
 
 /**** Copied from OccupyDesign WordPress site ****/
